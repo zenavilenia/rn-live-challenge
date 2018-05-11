@@ -22,6 +22,7 @@ class Home extends Component {
   render() {
     return (
       <View>
+        <Text>hii</Text>
         <TouchableHighlight style={ styles.btnTweet }>
           <Text
             onPress={ () => {

@@ -1,5 +1,6 @@
 import {
-  SET_WORD
+  SET_WORD,
+  CHANGE_STATUS
 } from './action.type';
 
 export const setWord = (word) => {
@@ -8,7 +9,17 @@ export const setWord = (word) => {
   }
 }
 
+export const setStatus = () => {
+  return dispatch => {
+    dispatch(setNewStatus());
+  }
+}
+
 const setRandomWord = (word) => ({
   type: SET_WORD,
   payload: word
+})
+
+const setNewStatus = () => ({
+  type: CHANGE_STATUS,
 })

@@ -1,10 +1,12 @@
 import {
-  SET_WORD
+  SET_WORD,
+  CHANGE_STATUS
 } from './action.type';
 
 const initialState = {
   words: ['CAT', 'DOG'],
   word: '',
+  isWin: false,
   loading: false,
   error: {
     status: false,
@@ -18,6 +20,11 @@ const words = (state = { ...initialState }, action) => {
       return ({
         ...state,
         word: action.payload,
+      })
+    case CHANGE_STATUS:
+      return ({
+        ...state,
+        isWin: true,
       })
     default:
       return state;
