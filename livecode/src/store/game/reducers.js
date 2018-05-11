@@ -4,7 +4,7 @@ import {
 } from './action.type';
 
 const initialState = {
-  words: ['CAT', 'DOG'],
+  words: ['CAT', 'DOG', 'KUCING', 'TERBANG'],
   word: '',
   isWin: false,
   loading: false,

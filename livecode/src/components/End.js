@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import {
   Platform,
   StyleSheet,
@@ -8,12 +10,25 @@ import {
 
 class End extends Component {
   render() {
-    return (
-      <View>
-        <Text>Ini End</Text>
-      </View>
-    );
+    let { isWin } = this.props.game;
+    if (isWin) {
+      return (
+        <View>
+          <Text>You Win</Text>
+        </View>
+      );
+    } else {
+      return (
+        <View>
+          <Text>You Lose</Text>
+        </View>
+      );
+    }
   }
 }
 
-export default End;
+const mapStateToProps = (state) => ({
+  game: state.game
+})
+
+export default connect(mapStateToProps, null)(End);
