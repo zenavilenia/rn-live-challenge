@@ -115,7 +115,7 @@ class Game extends Component {
             <Button style={ styles.btn } title='R' onPress={ () => { this.guessTry('R') } }/>
             <Button style={ styles.btn } title='T' onPress={ () => { this.guessTry('T') } }/>
             <Button style={ styles.btn } title='Y' onPress={ () => { this.guessTry('Y') } }/>
-            <Button style={ styles.btn } title='N' onPress={ () => { this.guessTry('N') } }/>
+            <Button style={ styles.btn } title='P' onPress={ () => { this.guessTry('P') } }/>
           </View>
 
           <View style={ styles.btnFlex }>
@@ -125,7 +125,6 @@ class Game extends Component {
             <Button style={ styles.btn } title='F' onPress={ () => { this.guessTry('F') } }/>
             <Button style={ styles.btn } title='G' onPress={ () => { this.guessTry('G') } }/>
             <Button style={ styles.btn } title='H' onPress={ () => { this.guessTry('H') } }/>
-            <Button style={ styles.btn } title='M' onPress={ () => { this.guessTry('M') } }/>
           </View>
 
           <View style={ styles.btnFlex }>
@@ -138,12 +137,13 @@ class Game extends Component {
           </View>
 
           <View style={ styles.btnFlex }>
-            <Button style={ styles.btn } title='P' onPress={ () => { this.guessTry('P') } }/>
             <Button style={ styles.btn } title='Z' onPress={ () => { this.guessTry('Z') } }/>
             <Button style={ styles.btn } title='X' onPress={ () => { this.guessTry('X') } }/>
             <Button style={ styles.btn } title='C' onPress={ () => { this.guessTry('C') } }/>
             <Button style={ styles.btn } title='V' onPress={ () => { this.guessTry('V') } }/>
-            <Button style={ styles.btn } title='B' onPress={ () => { this.guessTry('B') } }/>  
+            <Button style={ styles.btn } title='B' onPress={ () => { this.guessTry('B') } }/> 
+            <Button style={ styles.btn } title='N' onPress={ () => { this.guessTry('N') } }/> 
+            <Button style={ styles.btn } title='M' onPress={ () => { this.guessTry('M') } }/>
           </View>
         </View>
       </View>
