@@ -99,57 +99,83 @@ class Game extends Component {
       status = "Can't You Guess It?"
     }
     return (
-      <View>
-        <View>
+      <View >
+        <View style= { styles.card }>
           <Text>Ini Game</Text>
           <Text> { this.state.hiddenWord.join(' ') } </Text>
           <Text>Turn Left: { this.state.guessLeft }</Text>
           <Text>Guessed Word: { this.state.guessedWord }</Text>
-          <Text> { status } </Text>
+          <Text>Game Status: { status } </Text>
         </View>
-        <View style={{ height:200, width:500 }}>
-          <View style={{flex:1, flexDirection:'row'}}>
-            <Button style={{width:20}} title='Q' onPress={ () => { this.guessTry('Q') } } />
-            <Button style={{ width: 20 }} title='W' onPress={ () => { this.guessTry('W') } }/>
-            <Button style={{ width: 20 }} title='E' onPress={ () => { this.guessTry('E') } }/>
-            <Button style={{ width: 20 }} title='R' onPress={ () => { this.guessTry('R') } }/>
-            <Button style={{ width: 20 }} title='T' onPress={ () => { this.guessTry('T') } }/>
-            <Button style={{ width: 20 }} title='Y' onPress={ () => { this.guessTry('Y') } }/>
-            <Button style={{ width: 20 }} title='N' onPress={ () => { this.guessTry('N') } }/>
+        <View style={ styles.flexContainer }>
+          <View style={ styles.btnFlex }>
+            <Button style={ styles.btn } title='Q' onPress={ () => { this.guessTry('Q') } } />
+            <Button style={ styles.btn } title='W' onPress={ () => { this.guessTry('W') } }/>
+            <Button style={ styles.btn } title='E' onPress={ () => { this.guessTry('E') } }/>
+            <Button style={ styles.btn } title='R' onPress={ () => { this.guessTry('R') } }/>
+            <Button style={ styles.btn } title='T' onPress={ () => { this.guessTry('T') } }/>
+            <Button style={ styles.btn } title='Y' onPress={ () => { this.guessTry('Y') } }/>
+            <Button style={ styles.btn } title='N' onPress={ () => { this.guessTry('N') } }/>
           </View>
 
-          <View style={{ flex: 1, flexDirection: 'row' }}>
-            <Button style={{ width: 20 }} title='A' onPress={ () => { this.guessTry('A') } } />
-            <Button style={{ width: 20 }} title='S' onPress={ () => { this.guessTry('S') } }/>
-            <Button style={{ width: 20 }} title='D' onPress={ () => { this.guessTry('D') } }/>
-            <Button style={{ width: 20 }} title='F' onPress={ () => { this.guessTry('F') } }/>
-            <Button style={{ width: 20 }} title='G' onPress={ () => { this.guessTry('G') } }/>
-            <Button style={{ width: 20 }} title='H' onPress={ () => { this.guessTry('H') } }/>
-            <Button style={{ width: 20 }} title='M' onPress={ () => { this.guessTry('M') } }/>
+          <View style={ styles.btnFlex }>
+            <Button style={ styles.btn } title='A' onPress={ () => { this.guessTry('A') } } />
+            <Button style={ styles.btn } title='S' onPress={ () => { this.guessTry('S') } }/>
+            <Button style={ styles.btn } title='D' onPress={ () => { this.guessTry('D') } }/>
+            <Button style={ styles.btn } title='F' onPress={ () => { this.guessTry('F') } }/>
+            <Button style={ styles.btn } title='G' onPress={ () => { this.guessTry('G') } }/>
+            <Button style={ styles.btn } title='H' onPress={ () => { this.guessTry('H') } }/>
+            <Button style={ styles.btn } title='M' onPress={ () => { this.guessTry('M') } }/>
           </View>
 
-          <View style={{ flex: 1, flexDirection: 'row' }}>
-            <Button style={{ width: 20 }} title='J' onPress={ () => { this.guessTry('J') } }/>
-            <Button style={{ width: 20 }} title='U' onPress={ () => { this.guessTry('U') } }/>
-            <Button style={{ width: 20 }} title='I' onPress={ () => { this.guessTry('I') } }/>
-            <Button style={{ width: 20 }} title='K' onPress={ () => { this.guessTry('K') } }/>
-            <Button style={{ width: 20 }} title='L' onPress={ () => { this.guessTry('L') } }/>
-            <Button style={{ width: 20 }} title='O' onPress={ () => { this.guessTry('O') } }/>
+          <View style={ styles.btnFlex }>
+            <Button style={ styles.btn } title='J' onPress={ () => { this.guessTry('J') } }/>
+            <Button style={ styles.btn } title='U' onPress={ () => { this.guessTry('U') } }/>
+            <Button style={ styles.btn } title='I' onPress={ () => { this.guessTry('I') } }/>
+            <Button style={ styles.btn } title='K' onPress={ () => { this.guessTry('K') } }/>
+            <Button style={ styles.btn } title='L' onPress={ () => { this.guessTry('L') } }/>
+            <Button style={ styles.btn } title='O' onPress={ () => { this.guessTry('O') } }/>
           </View>
 
-          <View style={{ flex: 1, flexDirection: 'row' }}>
-            <Button style={{ width: 20 }} title='P' onPress={ () => { this.guessTry('P') } }/>
-            <Button style={{ width: 20 }} title='Z' onPress={ () => { this.guessTry('Z') } }/>
-            <Button style={{ width: 20 }} title='X' onPress={ () => { this.guessTry('X') } }/>
-            <Button style={{ width: 20 }} title='C' onPress={ () => { this.guessTry('C') } }/>
-            <Button style={{ width: 20 }} title='V' onPress={ () => { this.guessTry('V') } }/>
-            <Button style={{ width: 20 }} title='B' onPress={ () => { this.guessTry('B') } }/>  
+          <View style={ styles.btnFlex }>
+            <Button style={ styles.btn } title='P' onPress={ () => { this.guessTry('P') } }/>
+            <Button style={ styles.btn } title='Z' onPress={ () => { this.guessTry('Z') } }/>
+            <Button style={ styles.btn } title='X' onPress={ () => { this.guessTry('X') } }/>
+            <Button style={ styles.btn } title='C' onPress={ () => { this.guessTry('C') } }/>
+            <Button style={ styles.btn } title='V' onPress={ () => { this.guessTry('V') } }/>
+            <Button style={ styles.btn } title='B' onPress={ () => { this.guessTry('B') } }/>  
           </View>
         </View>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  card: {
+    backgroundColor: '#ffffff',
+    padding: 16,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderStyle: 'solid',
+    borderRadius: 8,
+    borderWidth: 3,
+    margin: 16,
+  },
+  flexContainer: {
+    height:200,
+    width:500,
+  },
+  btnFlex: {
+    flex: 1,
+    flexDirection: 'row'
+  },
+  btn: {
+    width: 20,
+    height: 20,
+  }
+})
 
 const mapStateToProps = (state) => ({
   game: state.game

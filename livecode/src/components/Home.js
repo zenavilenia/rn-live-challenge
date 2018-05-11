@@ -21,7 +21,7 @@ class Home extends Component {
 
   render() {
     return (
-      <View>
+      <View style= { styles.card }>
         <TouchableHighlight style={ styles.btnTweet }>
           <Text
             onPress={ () => {
@@ -35,39 +35,19 @@ class Home extends Component {
 }
 
 const styles = StyleSheet.create({
-  tweetCard: {
+  card: {
     backgroundColor: '#ffffff',
-    padding: 0,
+    padding: 16,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     borderStyle: 'solid',
     borderRadius: 8,
     borderWidth: 3,
-    margin: 0,
-    width: 220,
-  },
-  tweetText: {
-    backgroundColor: '#ffffff',
-    padding: 10,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    borderStyle: 'solid',
-    borderRadius: 4,
-    borderWidth: 2,
-    margin: 4,
-  },
-  inputTweet: {
-    display: 'flex',
-    borderStyle: 'solid',
-    borderRadius: 4,
-    borderWidth: 2,
-    alignItems: 'stretch',
-    width: '90%'
+    margin: 16,
   },
   btnTweet: {
-    width: 60,
+    width: 100,
     backgroundColor: 'white',
     borderStyle: 'solid',
     borderRadius: 4,
