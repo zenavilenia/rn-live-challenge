@@ -20,7 +20,6 @@ class Game extends Component {
       guessLeft: 5,
       guessedWord: []
     };
-
   }
 
   hideWord() {
@@ -59,11 +58,12 @@ class Game extends Component {
           this.setState({
             hiddenWord: newHiddenWord
           })
-          isFind = true;
-          if (this.state.hiddenWord.indexOf("_") === -1) {
+          console.log('new hidden word', newHiddenWord)
+          if(newHiddenWord.indexOf("_") === -1) {
             this.props.setStatus();
             this.props.navigation.navigate('End');
           }
+          isFind = true;
         }
       }
       if(!isFind) {
@@ -77,8 +77,6 @@ class Game extends Component {
         })
       }
     }
-
-    this.checkGame();
   }
 
   checkGame() {
@@ -97,7 +95,7 @@ class Game extends Component {
   render() {
     let { word } = this.props.game;
     let status = "Good Guess"
-    if (this.props.guessLeft <= 2) {
+    if (this.state.guessLeft <= 2) {
       status = "Can't You Guess It?"
     }
     return (
@@ -107,7 +105,7 @@ class Game extends Component {
           <Text> { this.state.hiddenWord.join(' ') } </Text>
           <Text>Turn Left: { this.state.guessLeft }</Text>
           <Text>Guessed Word: { this.state.guessedWord }</Text>
-          <Text>Game Status: { status }</Text>
+          <Text> { status } </Text>
         </View>
         <View style={{ height:200, width:500 }}>
           <View style={{flex:1, flexDirection:'row'}}>
