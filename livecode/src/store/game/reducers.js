@@ -20,6 +20,7 @@ const words = (state = { ...initialState }, action) => {
       return ({
         ...state,
         word: action.payload,
+        isWin: false,
       })
     case CHANGE_STATUS:
       return ({
