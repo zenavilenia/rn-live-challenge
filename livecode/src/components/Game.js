@@ -115,6 +115,9 @@ class Game extends Component {
             <Button style={ styles.btn } title='R' onPress={ () => { this.guessTry('R') } }/>
             <Button style={ styles.btn } title='T' onPress={ () => { this.guessTry('T') } }/>
             <Button style={ styles.btn } title='Y' onPress={ () => { this.guessTry('Y') } }/>
+            <Button style={ styles.btn } title='U' onPress={ () => { this.guessTry('U') } }/>
+            <Button style={ styles.btn } title='I' onPress={ () => { this.guessTry('I') } }/>
+            <Button style={ styles.btn } title='O' onPress={ () => { this.guessTry('O') } }/>
             <Button style={ styles.btn } title='P' onPress={ () => { this.guessTry('P') } }/>
           </View>
 
@@ -125,15 +128,9 @@ class Game extends Component {
             <Button style={ styles.btn } title='F' onPress={ () => { this.guessTry('F') } }/>
             <Button style={ styles.btn } title='G' onPress={ () => { this.guessTry('G') } }/>
             <Button style={ styles.btn } title='H' onPress={ () => { this.guessTry('H') } }/>
-          </View>
-
-          <View style={ styles.btnFlex }>
             <Button style={ styles.btn } title='J' onPress={ () => { this.guessTry('J') } }/>
-            <Button style={ styles.btn } title='U' onPress={ () => { this.guessTry('U') } }/>
-            <Button style={ styles.btn } title='I' onPress={ () => { this.guessTry('I') } }/>
             <Button style={ styles.btn } title='K' onPress={ () => { this.guessTry('K') } }/>
             <Button style={ styles.btn } title='L' onPress={ () => { this.guessTry('L') } }/>
-            <Button style={ styles.btn } title='O' onPress={ () => { this.guessTry('O') } }/>
           </View>
 
           <View style={ styles.btnFlex }>
